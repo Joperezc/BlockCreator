@@ -1,6 +1,9 @@
 # BlockCreator
 Comment block automation for functions and classes in python
 
+# Contributers
+* @Joperezc
+
 # Python Versions
 * Tested on Python 3.10.6
 
@@ -8,18 +11,21 @@ Comment block automation for functions and classes in python
 * Tested on Linux/Ubuntu
 * Mac/Windows not tested
 
+# Required Libraries
+* Prompt_Toolkit
+
 # Goals
-* Add comment blocks to functions (DONE)
-* Add comment blocks to Classes (DONE)
-* Add comment blocks to if __name__ = __main__ (DONE)
-* Add header comment block
-* Add terminal interface for entering comments without having
+- [x] Add comment blocks to functions
+- [x] Add comment blocks to Classes
+- [x] Add comment blocks to ```if __name__ = __main__```
+- [ ] Add header comment block
+- [ ] Add terminal interface for entering comments without having
   to go into IDE.
-* Correct indentation for comment blocks (DONE)
+- [x] Correct indentation for comment blocks
 
 
 # Instructions for Use
 1. Run the script through the linux cmd
     * ```python3 commentBlockCreator.py (linux)```
-3. type in the file path for the python file
+2. type in the file path for the python file
    you wish to add comments to or use tab completion
