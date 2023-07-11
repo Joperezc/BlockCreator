@@ -85,11 +85,10 @@ def lookForFunctions(fileDesc, outFileDesc):
 #comment block based on the amount of \t or spaces
 #in the split lines
 #################
+
 def indentCalc(splitLine):
     defIndent = 0
-    print(splitLine)
     if(len(splitLine) > 1 or "\t" in splitLine[0]):
-        print(splitLine)
         if(len(splitLine) == 1):
             for i in splitLine[0]:
                 if i == "\t":
@@ -102,7 +101,6 @@ def indentCalc(splitLine):
                 defIndent = int(len(splitLine[0]) / 4)
             
         indent = ""
-        print(defIndent)
         for i in range(defIndent):
             indent = indent + "\t"
         return indent
