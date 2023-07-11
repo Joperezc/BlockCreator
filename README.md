@@ -35,3 +35,8 @@ Comment block automation for functions and classes in python
 2.5. If using the test script as file path,
     some functions are purposefully over-indented
     to show comment block indentation.
+    
+# Known Bugs
+* Conditionals in commentBlockCreator can lead to
+  comment blocks being generated in those locations when
+  running script on itself
