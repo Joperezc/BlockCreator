@@ -28,8 +28,10 @@ Comment block automation for functions and classes in python
 # Instructions for Use
 1. Run the script through the linux cmd
     * ```python3 commentBlockCreator.py (linux)```
-2. type in the file path for the python file
+      
+2. Type in the file path for the python file
    you wish to add comments to or use tab completion
-2.5 If using the test script as file path,
+   
+2.5. If using the test script as file path,
     some functions are purposefully over-indented
     to show comment block indentation.
