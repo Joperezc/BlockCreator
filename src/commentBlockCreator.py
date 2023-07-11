@@ -1,5 +1,10 @@
 
-
+#################
+#Name: Joperezc
+#Date: 07/11/23
+#File Description: Script for automating
+#comment block creation in python files
+#################
 
 
 import sys, os
@@ -14,16 +19,34 @@ from prompt_toolkit import completion, prompt
 #Description: Open file and call LookForFunctions
 #replace the original file with the new comment block full
 #file.
+#file Param: file path
 #################
 
 def grabFile(file):
 
     with open(file, "r") as f:
         with open("outfile.py", "w+") as o:
-            lineNumLis = lookForFunctions(f, o)
+            makeHeader(f, o)
+            lookForFunctions(f, o)
             os.replace(o.name, file)
     return
 
+#################
+#Comment Block
+#Function: makeHeader
+#Description: Make an intro comment block
+#at top of file
+#fileDesc Param: file descriptor
+#outFileDesc Param: Temp out file for
+#rewriting.
+#################
+
+def makeHeader(fileDesc, outFileDesc):
+    outFileDesc.write("\n#################\n")
+    outFileDesc.write("#Name: \n")
+    outFileDesc.write("#Date: \n")
+    outFileDesc.write("#File Description: \n")
+    outFileDesc.write("#################\n")
 
 
 #################
@@ -32,6 +55,9 @@ def grabFile(file):
 #Description: Look for functions and classes,
 #and copy/write lines and comment blocks to temp
 #outfile
+#fileDesc Param: file descriptor
+#outFileDesc Param: Temp out file for
+#rewriting.
 #################
 
 def lookForFunctions(fileDesc, outFileDesc):
@@ -84,6 +110,9 @@ def lookForFunctions(fileDesc, outFileDesc):
 #Description: Calculate the indentation of the 
 #comment block based on the amount of \t or spaces
 #in the split lines
+#splitLine Param: file line split with either no
+#spaces/tabs preceeding the funciton/class definition
+#or spaces/tabs preceeding the function/class definition
 #################
 
 def indentCalc(splitLine):
