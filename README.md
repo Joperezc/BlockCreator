@@ -13,6 +13,7 @@ Comment block automation for functions and classes in python
 
 # Required Libraries
 * Prompt_Toolkit
+* (Colorama if running test script)
 
 # Goals
 - [x] Add comment blocks to functions
