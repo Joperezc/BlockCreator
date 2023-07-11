@@ -19,7 +19,7 @@ Comment block automation for functions and classes in python
 - [x] Add comment blocks to functions
 - [x] Add comment blocks to Classes
 - [x] Add comment blocks to ```if __name__ = __main__```
-- [ ] Add header comment block
+- [x] Add header comment block
 - [ ] Add terminal interface for entering comments without having
   to go into IDE.
 - [x] Correct indentation for comment blocks
